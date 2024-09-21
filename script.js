@@ -1,4 +1,3 @@
-// Перенаправление через 2 секунды
 window.onload = function() {
     setTimeout(function() {
         window.location.href = "https://www.tiktok.com";
