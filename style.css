@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Apple+Gothic&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Apple Gothic', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,55 +11,45 @@ body {
     background-color: #001f3f; /* Темно-синий цвет */
 }
 
-.container {
+.container, .lock-screen {
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
 }
 
-.container:hover {
-    transform: scale(1.05);
+.lock-screen {
+    display: none; /* Скрыто по умолчанию */
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.lock-icon {
+    width: 100px;
+    height: 100px;
 }
 
-.loading {
-    font-size: 24px;
-    margin-bottom: 10px;
-    animation: pulse 1.5s infinite;
+.lock-text {
+    margin: 20px 0;
 }
 
-.info {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #e0e0e0;
+#nickname {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.socials {
-    margin-top: 20px;
+#submit-nickname, #admin-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1DA1F2;
+    color: white;
+    cursor: pointer;
 }
 
-.socials a {
-    color: #1DA1F2;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.icon {
-    width: 64px;
-    height: 64px;
-}
-
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.7; }
-    100% { opacity: 1; }
+#admin-button {
+    background-color: #ff3d00; /* Красный цвет для администраторов */
 }
