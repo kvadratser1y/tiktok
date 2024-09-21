@@ -1,3 +1,4 @@
+
 let timeSpent = 0;
 const limit = 30 * 60 * 1000; // 30 минут в миллисекундах
 let isBlocked = false;
