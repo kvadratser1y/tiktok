@@ -39,3 +39,4 @@ document.getElementById('admin-button').onclick = function() {
         alert("Неверный пароль!");
     }
 };
+
